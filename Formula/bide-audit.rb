@@ -1,33 +1,33 @@
 # typed: false
 # frozen_string_literal: true
 
-# This file is generated on release by GoReleaser; the v0.1.0 formula was
-# backfilled by hand. Do not edit; it is overwritten on the next release.
+# Hand-maintained formula for the bide-audit verifier CLI. Update the version
+# and sha256s when a new bide release ships.
 class BideAudit < Formula
   desc "Offline verifier for bide proof bundles (RFC 6962 Merkle audit trails)"
   homepage "https://bide-ai.com"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bide-ai/bide/releases/download/v0.1.0/bide-audit_0.1.0_darwin_amd64.tar.gz"
-      sha256 "36182e5393bc71cc830956f2bc26bd060c14632373237cef71c5096c072958fc"
+      url "https://github.com/bide-ai/bide/releases/download/v0.2.0/bide-audit_0.2.0_darwin_amd64.tar.gz"
+      sha256 "058f06fab0e0585455a2e4510f304b9cccf46863c77fba41de7d03000b375d6d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bide-ai/bide/releases/download/v0.1.0/bide-audit_0.1.0_darwin_arm64.tar.gz"
-      sha256 "02e902fbacbcac300fba764a9de5fdfdbc11beabce52f97596e3b40183ed785c"
+      url "https://github.com/bide-ai/bide/releases/download/v0.2.0/bide-audit_0.2.0_darwin_arm64.tar.gz"
+      sha256 "b5e1c149e13da660383ca4aea9ba0e21ea03d2ea2f42573a6ef6dd1f08473b2c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bide-ai/bide/releases/download/v0.1.0/bide-audit_0.1.0_linux_amd64.tar.gz"
-      sha256 "38fbec38a3e6e66a724278fbf794270152b6ca29121f45ec72c106f10d5b68f7"
+      url "https://github.com/bide-ai/bide/releases/download/v0.2.0/bide-audit_0.2.0_linux_amd64.tar.gz"
+      sha256 "2a27c806218009abc785aacfc12b0321e0b17775b633123811b42a5add0cd55a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bide-ai/bide/releases/download/v0.1.0/bide-audit_0.1.0_linux_arm64.tar.gz"
-      sha256 "86eb14c659fb7e5993d390b9b391619222bf358292c656c2594a7fb3a9faed85"
+      url "https://github.com/bide-ai/bide/releases/download/v0.2.0/bide-audit_0.2.0_linux_arm64.tar.gz"
+      sha256 "f9b60fed0b8700a5e0702e4d252771b82e321bde13155fb2681f2504963e268c"
     end
   end
 
