@@ -6,28 +6,28 @@
 class BideAudit < Formula
   desc "Offline verifier for bide proof bundles (RFC 6962 Merkle audit trails)"
   homepage "https://bide-ai.com"
-  version "0.10.0"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bide-ai/bide/releases/download/v0.10.0/bide-audit_0.10.0_darwin_amd64.tar.gz"
-      sha256 "9d8c5cbf6ae7363ae30f52d9deafa9b393744a45979f853bbfd9a775314ac772"
+      url "https://github.com/bide-ai/bide/releases/download/v0.11.0/bide-audit_0.11.0_darwin_amd64.tar.gz"
+      sha256 "4a0006bf1e9949cfa201d73c45379af5da2ea5283cf8f1d9e56ad8e3edf6652f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bide-ai/bide/releases/download/v0.10.0/bide-audit_0.10.0_darwin_arm64.tar.gz"
-      sha256 "fef600a7419622b1590f344545fd605cda45b5458c11f00c69a18444031816a5"
+      url "https://github.com/bide-ai/bide/releases/download/v0.11.0/bide-audit_0.11.0_darwin_arm64.tar.gz"
+      sha256 "82679cd5f255e31ed97071d1ac8b38571798ccb7423020ac09544831055ca7ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bide-ai/bide/releases/download/v0.10.0/bide-audit_0.10.0_linux_amd64.tar.gz"
-      sha256 "498e18c1ed33e3674e2c5105eb11596b81e50131f67817fea4ffea30a29f9b60"
+      url "https://github.com/bide-ai/bide/releases/download/v0.11.0/bide-audit_0.11.0_linux_amd64.tar.gz"
+      sha256 "f293eb164bfc22d887d6bea7e3751183150e6f93c6aa1d8fdd55e2502cd846a6"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bide-ai/bide/releases/download/v0.10.0/bide-audit_0.10.0_linux_arm64.tar.gz"
-      sha256 "a4b027dd6329cfe4d429763908c70dac0e5d5d1a1b24523b718d10cab2ef78c1"
+      url "https://github.com/bide-ai/bide/releases/download/v0.11.0/bide-audit_0.11.0_linux_arm64.tar.gz"
+      sha256 "0b2aafc65e2ea9a1cdd81b3414168e5214b991667dea32b3ccc588e7d3840935"
     end
   end
 
